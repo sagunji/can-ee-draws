@@ -12,7 +12,8 @@ const swaggerOptions = {
     info: {
       title: "Canada Express Entry Draws API",
       version: "1.0.0",
-      description: "API for accessing Canada Express Entry draw history",
+      description:
+        "API for accessing Canada Express Entry draw history only from 2023 onwards",
     },
   },
   apis: ["./routes/*.js"],
