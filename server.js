@@ -2,6 +2,7 @@ const express = require("express");
 const swaggerUi = require("swagger-ui-express");
 const swaggerJsdoc = require("swagger-jsdoc");
 const drawsRoutes = require("./routes/draws.routes");
+const { getApiInfo } = require("./controllers/api.controller");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -12,8 +13,7 @@ const swaggerOptions = {
     info: {
       title: "Canada Express Entry Draws API",
       version: "1.0.0",
-      description:
-        "API for accessing Canada Express Entry draw history only from 2023 onwards",
+      description: "API for accessing Canada Express Entry draw history",
     },
   },
   apis: ["./routes/*.js"],
@@ -24,6 +24,7 @@ const swaggerSpec = swaggerJsdoc(swaggerOptions);
 app.use(express.json());
 app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
+app.get("/api", getApiInfo);
 app.use("/api/draws", drawsRoutes);
 
 app.listen(port, () => {
