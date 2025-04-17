@@ -12,8 +12,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.TOKEN }}
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
@@ -40,3 +38,5 @@ jobs:
             git commit -m '[bot] Update latest draws'
             git push
           fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
