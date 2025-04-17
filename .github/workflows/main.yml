@@ -35,7 +35,7 @@ jobs:
           if git diff-index --quiet HEAD; then
             echo "No changes to commit"
           else
-            git commit -m '[bot] Update data from Google Sheet'
+            git commit -m '[bot] Update latest draws'
             git push
           fi
         env:
