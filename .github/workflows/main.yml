@@ -1,0 +1,41 @@
+name: Download Google Sheet and Commit
+
+on:
+  schedule:
+    - cron: "*/30 10-17 * * 1-5" # At every 30th minute past every hour from 10 through 17 on every day-of-week from Monday through Friday.
+
+jobs:
+  sync-and-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run extractor
+        run: node ./scripts/extractor.js
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git stash
+          git pull
+          git stash pop
+          git add ./data/ee-draws.json
+          if git diff-index --quiet HEAD; then
+            echo "No changes to commit"
+          else
+            git commit -m '[bot] Update data from Google Sheet'
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
