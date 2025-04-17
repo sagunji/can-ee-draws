@@ -1,11 +1,11 @@
-name: Download Google Sheet and Commit
+name: Draws Update
 
 on:
   schedule:
     - cron: "*/30 10-17 * * 1-5" # At every 30th minute past every hour from 10 through 17 on every day-of-week from Monday through Friday.
 
 jobs:
-  sync-and-commit:
+  update-draws:
     runs-on: ubuntu-latest
 
     steps:
@@ -15,7 +15,8 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "14"
+          node-version: "20"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm install
