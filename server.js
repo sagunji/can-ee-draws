@@ -37,3 +37,8 @@ app.listen(port, () => {
     `Swagger documentation available at http://localhost:${port}/api/docs`
   );
 });
+
+// Export the fetch handler for Cloudflare Workers
+export default {
+  fetch: app.fetch,
+};
