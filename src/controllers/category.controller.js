@@ -1,6 +1,6 @@
-const drawsData = require("../data/ee-draws.json");
+const drawsData = require("../../data/ee-draws.json");
 
-const getCategories = (_, res) => {
+const getCategories = (c) => {
   const categoryCounts = drawsData.draws.reduce((acc, draw) => {
     if (draw.category) {
       acc[draw.category] = (acc[draw.category] || 0) + 1;
@@ -13,7 +13,7 @@ const getCategories = (_, res) => {
     .sort((a, b) => b.count - a.count)
     .map((item) => item.category);
 
-  res.json({ categories: sortedCategories });
+  return c.json({ categories: sortedCategories });
 };
 
 module.exports = {

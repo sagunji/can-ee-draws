@@ -1,0 +1,9 @@
+name = "can-ee-draws"
+main = "dist/worker.js"
+compatibility_date = "2024-01-01"
+
+[build]
+command = "npm run build"
+
+[env.production]
+name = "can-ee-draws-prod"
