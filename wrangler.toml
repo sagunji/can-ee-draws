@@ -1,5 +1,5 @@
 name = "can-ee-draws"
-main = "dist/server.js"
+main = "dist/worker.js"
 compatibility_date = "2024-01-01"
 
 [build]

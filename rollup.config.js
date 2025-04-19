@@ -1,26 +1,24 @@
-const { nodeResolve } = require("@rollup/plugin-node-resolve");
-const commonjs = require("@rollup/plugin-commonjs");
-const json = require("@rollup/plugin-json");
-const terser = require("@rollup/plugin-terser");
+import { nodeResolve } from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
+import json from "@rollup/plugin-json";
+import terser from "@rollup/plugin-terser";
 
-module.exports = {
-  input: "server.js",
+export default {
+  input: "./src/worker.js",
   output: {
     file: "dist/worker.js",
-    format: "esm",
+    format: "es",
     sourcemap: true,
   },
   plugins: [
     nodeResolve({
-      preferBuiltins: false,
+      preferBuiltins: true,
       browser: true,
+      extensions: [".js", ".json"],
     }),
-    commonjs({
-      ignoreDynamicRequires: true,
-      transformMixedEsModules: true,
-    }),
+    commonjs(),
     json(),
     terser(),
   ],
-  external: [],
+  external: ["@cloudflare/workers-types"],
 };

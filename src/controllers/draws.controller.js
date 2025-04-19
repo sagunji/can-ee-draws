@@ -1,14 +1,15 @@
-const drawsData = require("../data/ee-draws.json");
+const drawsData = require("../../data/ee-draws.json");
 
-const getDraws = (req, res) => {
-  const { year, category } = req.query;
+const getDraws = (c) => {
+  const year = c.req.query("year");
+  const category = c.req.query("category");
 
   let filteredDraws = [...drawsData.draws];
 
   if (year) {
     filteredDraws = filteredDraws.filter((draw) => draw.year === year);
     if (filteredDraws.length === 0) {
-      return res.json({ draws: [] });
+      return c.json({ draws: [] });
     }
   }
 
@@ -18,14 +19,14 @@ const getDraws = (req, res) => {
       (draw) => draw.category && draw.category.toLowerCase() === categoryLower
     );
     if (filteredDraws.length === 0) {
-      return res.json({ draws: [] });
+      return c.json({ draws: [] });
     }
   }
 
-  res.json({ draws: filteredDraws });
+  return c.json({ draws: filteredDraws });
 };
 
-const getLatestDraw = (req, res) => {
+const getLatestDraw = (c) => {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
@@ -47,10 +48,10 @@ const getLatestDraw = (req, res) => {
   }, null);
 
   if (!latestDraw) {
-    return res.json({ draw: {} });
+    return c.json({ draw: {} });
   }
 
-  res.json({ draw: latestDraw });
+  return c.json({ draw: latestDraw });
 };
 
 module.exports = {
