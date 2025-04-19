@@ -12,7 +12,6 @@ A RESTful API service that provides access to historical data of Canada's Expres
 - Filter draws by year and category
 - Get the latest draw (closest to today's date)
 - View CRS score distribution in the candidate pool
-- Swagger API documentation
 - Automated updates via GitHub Actions
 - Deployed on Cloudflare Workers
 
@@ -107,7 +106,6 @@ For detailed API documentation, visit: [https://can-ee-draws.workers.dev/api/doc
 - pnpm - Package manager
 - Rollup - Module bundler
 - GitHub Actions - CI/CD and automation
-- Swagger UI - API documentation
 
 ## 🤝 Contributing
 
