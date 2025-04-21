@@ -8,6 +8,8 @@ on:
 jobs:
   update-draws:
     runs-on: ubuntu-latest
+    env:
+      TZ: "America/Toronto"
 
     steps:
       - name: Checkout repository
