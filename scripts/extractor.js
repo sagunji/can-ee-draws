@@ -1,24 +1,21 @@
-const fs = require("fs");
-const https = require("https");
+import { writeFile, readFile } from "node:fs/promises";
+import https from "node:https";
 
 const scoreRanges = [
   {
     key: "dd1",
     range: "601-1200",
     value: "",
-    group: true,
   },
   {
     key: "dd2",
     range: "501-600",
     value: "",
-    group: true,
   },
   {
     key: "dd3",
     range: "451-500",
     value: "",
-    group: true,
   },
   {
     key: "dd4",
@@ -49,7 +46,6 @@ const scoreRanges = [
     key: "dd9",
     range: "401-450",
     value: "",
-    group: true,
   },
   {
     key: "dd10",
@@ -80,13 +76,11 @@ const scoreRanges = [
     key: "dd15",
     range: "351-400",
     value: "",
-    group: true,
   },
   {
     key: "dd16",
     range: "301-350",
     value: "",
-    group: true,
   },
   {
     key: "dd17",
@@ -150,7 +144,7 @@ function mapCategory(irccCategory) {
   return match ? match.category : null;
 }
 
-function fetchData(url) {
+async function fetchData(url) {
   return new Promise((resolve, reject) => {
     https
       .get(url, (res) => {
@@ -186,36 +180,20 @@ function convertDrawFormat(irccDraw) {
 }
 
 function mapDrawDistribution(latestDraw) {
-  const distribution = {
-    drawNumber: latestDraw.drawNumber,
+  return {
+    drawNumber: parseInt(latestDraw.drawNumber),
     drawDate: latestDraw.drawDate,
     ranges: scoreRanges.map((range) => ({
       ...range,
       value: latestDraw[range.key] || "0",
     })),
   };
-
-  return distribution;
-}
-
-async function writeDistributionToFile(distribution) {
-  try {
-    fs.writeFileSync(
-      "./data/distribution.json",
-      JSON.stringify(distribution, null, 2),
-      "utf8"
-    );
-    console.log(`✅ Distribution updated.`);
-  } catch (error) {
-    console.error("Error writing distribution file:", error);
-    throw error;
-  }
 }
 
 async function main() {
   try {
     const existingData = JSON.parse(
-      fs.readFileSync("./data/ee-draws.json", "utf8")
+      await readFile("./data/ee-draws.json", "utf8")
     );
 
     const irccData = await fetchData(
@@ -244,7 +222,7 @@ async function main() {
 
     existingData.draws.sort((a, b) => b.drawNumber - a.drawNumber);
 
-    fs.writeFileSync(
+    await writeFile(
       "./data/ee-draws.json",
       JSON.stringify(existingData, null, 2),
       "utf8"

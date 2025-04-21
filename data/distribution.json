@@ -1,24 +1,21 @@
 {
-  "drawNumber": "342",
+  "drawNumber": 342,
   "drawDate": "2025-04-14",
   "ranges": [
     {
       "key": "dd1",
       "range": "601-1200",
-      "value": "816",
-      "group": true
+      "value": "816"
     },
     {
       "key": "dd2",
       "range": "501-600",
-      "value": "19,782",
-      "group": true
+      "value": "19,782"
     },
     {
       "key": "dd3",
       "range": "451-500",
-      "value": "71,542",
-      "group": true
+      "value": "71,542"
     },
     {
       "key": "dd4",
@@ -48,8 +45,7 @@
     {
       "key": "dd9",
       "range": "401-450",
-      "value": "67,301",
-      "group": true
+      "value": "67,301"
     },
     {
       "key": "dd10",
@@ -79,14 +75,12 @@
     {
       "key": "dd15",
       "range": "351-400",
-      "value": "53,479",
-      "group": true
+      "value": "53,479"
     },
     {
       "key": "dd16",
       "range": "301-350",
-      "value": "22,799",
-      "group": true
+      "value": "22,799"
     },
     {
       "key": "dd17",
