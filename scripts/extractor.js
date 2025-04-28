@@ -192,7 +192,7 @@ function mapDrawDistribution(latestDraw) {
 
 async function writeDistributionToFile(distribution) {
   try {
-    fs.writeFileSync(
+    await writeFile(
       "./data/distribution.json",
       JSON.stringify(distribution, null, 2),
       "utf8"
