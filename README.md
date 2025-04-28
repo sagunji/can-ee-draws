@@ -20,7 +20,7 @@ A RESTful API service that provides access to historical data of Canada's Expres
 ### Base URL
 
 ```
-https://65790b5c-can-ee-draws.karanjit-sagun01.workers.dev/
+https://can-ee-draws.karanjit-sagun01.workers.dev
 ```
 
 ### Available Endpoints
