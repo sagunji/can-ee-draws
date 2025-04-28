@@ -190,6 +190,20 @@ function mapDrawDistribution(latestDraw) {
   };
 }
 
+async function writeDistributionToFile(distribution) {
+  try {
+    fs.writeFileSync(
+      "./data/distribution.json",
+      JSON.stringify(distribution, null, 2),
+      "utf8"
+    );
+    console.log(`✅ Distribution updated.`);
+  } catch (error) {
+    console.error("Error writing distribution file:", error);
+    throw error;
+  }
+}
+
 async function main() {
   try {
     const existingData = JSON.parse(
