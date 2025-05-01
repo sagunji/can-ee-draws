@@ -1,6 +1,14 @@
 {
   "draws": [
     {
+      "drawNumber": 344,
+      "date": "2025-05-01",
+      "invitationsIssued": 1,
+      "minimumCRS": 479,
+      "category": null,
+      "year": "2025"
+    },
+    {
       "drawNumber": 343,
       "date": "2025-04-28",
       "invitationsIssued": 421,
