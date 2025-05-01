@@ -133,6 +133,10 @@ function mapCategory(irccCategory) {
       category: "General",
     },
     {
+      pattern: /^education$/i,
+      category: "Education",
+    },
+    {
       pattern: /no program specified/i,
       category: null,
     },
