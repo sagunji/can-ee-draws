@@ -176,8 +176,8 @@ function convertDrawFormat(irccDraw) {
   return {
     drawNumber: parseInt(irccDraw.drawNumber),
     date: irccDraw.drawDate,
-    invitationsIssued: parseInt(irccDraw.drawSize),
-    minimumCRS: parseInt(irccDraw.drawCRS),
+    invitationsIssued: parseInt(irccDraw.drawSize.replace(/,/g, ""), 10),
+    minimumCRS: parseInt(irccDraw.drawCRS.replace(/,/g, ""), 10),
     category: mapCategory(irccDraw.drawName),
     year: new Date(irccDraw.drawDate).getFullYear().toString(),
   };
