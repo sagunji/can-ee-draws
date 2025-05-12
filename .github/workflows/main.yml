@@ -44,7 +44,7 @@ jobs:
           git stash
           git pull
           git stash pop
-          git add ./data/ee-draws.json
+          git add ./data
           git commit -m '[bot] Update latest draws'
           git push
         env:
