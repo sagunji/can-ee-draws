@@ -1,7 +1,7 @@
 import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { getApiInfo } from "./controllers/api.controller";
-import { getPoolStats } from "./controllers/pool.controller";
+import { getPoolStats, getPoolProgress } from "./controllers/pool.controller";
 import { getCategories } from "./controllers/category.controller";
 import { getDraws, getLatestDraw } from "./controllers/draws.controller";
 

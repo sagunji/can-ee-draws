@@ -22,6 +22,10 @@ const getApiInfo = (c) => {
         path: "/api/pool",
         description: "Get the pool stats",
       },
+      poolProgress: {
+        path: "/api/pool/progress",
+        description: "Get the pool progress",
+      },
     },
   });
 };
