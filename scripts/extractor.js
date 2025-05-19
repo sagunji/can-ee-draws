@@ -196,9 +196,34 @@ function mapDrawDistribution(latestDraw) {
 
 async function writeDistributionToFile(distribution) {
   try {
+    let pools = [];
+    try {
+      const fileContent = await readFile("./data/distribution.json", "utf8");
+      if (fileContent.trim()) {
+        pools = JSON.parse(fileContent);
+      }
+    } catch (readError) {
+      console.log(
+        "No existing distribution file or empty file, starting fresh"
+      );
+    }
+
+    const poolExists = pools.some(
+      (draw) => draw.drawNumber === distribution.drawNumber
+    );
+
+    if (poolExists) {
+      console.log(
+        `Pool #${distribution.drawNumber} already exists in the database`
+      );
+      return;
+    }
+
+    pools.unshift(distribution);
+
     await writeFile(
       "./data/distribution.json",
-      JSON.stringify(distribution, null, 2),
+      JSON.stringify(pools, null, 2),
       "utf8"
     );
     console.log(`✅ Distribution updated.`);

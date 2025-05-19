@@ -21,6 +21,10 @@ app.get("/api/pool", async (c) => {
   return await getPoolStats(c);
 });
 
+app.get("/api/pool/progress", async (c) => {
+  return await getPoolProgress(c);
+});
+
 app.get("/api/draws", async (c) => {
   return await getDraws(c);
 });
