@@ -1,10 +1,12 @@
-<p align="center">
-  <img src="https://gist.githubusercontent.com/sagunji/8c0138a7af3e4cb16059261c1a8be691/raw/d26d6d84abdbd1277747565b574f252fa9ab63c0/canoeh.svg" alt="Canada NOCs Logo" height="120"/>
-</p>
 
 # Canada Express Entry Draws API
 
 A RESTful API service that provides access to historical data of Canada's Express Entry draws. This API helps track and analyze Express Entry draw patterns, including CRS scores, invitation numbers, category-specific draws, and candidate pool distribution.
+
+### 🎉 Check out my app to see more Canada immigration related features
+
+[![Download on the App Store](https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg)](https://apps.apple.com/us/app/immime/id6745764350)
+
 
 ## 🌟 Features
 
