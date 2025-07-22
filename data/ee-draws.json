@@ -1,6 +1,14 @@
 {
   "draws": [
     {
+      "drawNumber": 357,
+      "date": "2025-07-22",
+      "invitationsIssued": 4000,
+      "minimumCRS": 475,
+      "category": "Healthcare",
+      "year": "2025"
+    },
+    {
       "drawNumber": 356,
       "date": "2025-07-21",
       "invitationsIssued": 202,
