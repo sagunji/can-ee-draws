@@ -2,7 +2,7 @@ name: Draws Update
 
 on:
   schedule:
-    - cron: "*/15 10-18 * * 1-6" # At every 30th minute past every hour from 10 through 17 on every day-of-week from Monday through Friday.
+    - cron: "*/15 10-22 * * 1-6" # At every 30th minute past every hour from 10 through 17 on every day-of-week from Monday through Friday.
   workflow_dispatch: # Add manual trigger
 
 jobs:
