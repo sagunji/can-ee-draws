@@ -1,4 +1,3 @@
-
 # Canada Express Entry Draws API
 
 A RESTful API service that provides access to historical data of Canada's Express Entry draws. This API helps track and analyze Express Entry draw patterns, including CRS scores, invitation numbers, category-specific draws, and candidate pool distribution.
@@ -6,7 +5,6 @@ A RESTful API service that provides access to historical data of Canada's Expres
 ### 🎉 Check out my app to see more Canada immigration related features
 
 [![Download on the App Store](https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg)](https://apps.apple.com/us/app/immime/id6745764350)
-
 
 ## 🌟 Features
 
@@ -87,6 +85,44 @@ For detailed API documentation, visit: [https://can-ee-draws.workers.dev/api/doc
    ```bash
    pnpm deploy
    ```
+
+## 🔧 Data Extraction
+
+The project includes a data extraction script that fetches the latest Express Entry draw data from IRCC and updates the local data files.
+
+### Running the Extractor
+
+1. **Basic extraction** (without webhook notification):
+
+   ```bash
+   node ./scripts/extractor.js
+   ```
+
+2. **With webhook notification**:
+   ```bash
+   WEBHOOK_API=https://your-webhook-url.com/api/notify node ./scripts/extractor.js
+   ```
+
+### What the Extractor Does
+
+- Fetches the latest draw data from IRCC's official API
+- Converts the data to the project's format
+- Updates `data/ee-draws.json` with new draw information
+- Updates `data/distribution.json` with candidate pool distribution
+- Sends a webhook notification (if `WEBHOOK_API` is set)
+- Handles duplicate draws gracefully
+
+### Environment Variables
+
+- `WEBHOOK_API` (optional): URL to send notifications when new draws are found
+
+### Automated Extraction
+
+The extractor runs automatically via GitHub Actions:
+
+- **Schedule**: Every 5 minutes from 10:00-22:00 UTC, Monday-Friday
+- **Manual trigger**: Available via GitHub Actions workflow_dispatch
+- **Webhook**: Configured via GitHub repository secrets
 
 ## 🔄 Automated Workflows
 

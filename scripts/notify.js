@@ -1,3 +1,5 @@
+import https from "node:https";
+
 export async function notifyNewDraw(newDraw) {
   return new Promise((resolve, reject) => {
     const webhookUrl = process.env.WEBHOOK_API;
@@ -10,7 +12,7 @@ export async function notifyNewDraw(newDraw) {
       return;
     }
 
-    const postData = JSON.stringify({ newDraw });
+    const postData = JSON.stringify(newDraw);
     const url = new URL(webhookUrl);
 
     const options = {
