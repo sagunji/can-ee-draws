@@ -1,5 +1,6 @@
 import { writeFile, readFile } from "node:fs/promises";
 import https from "node:https";
+import { notifyNewDraw } from "./notify.js";
 
 const scoreRanges = [
   {
@@ -173,12 +174,14 @@ async function fetchData(url) {
 }
 
 function convertDrawFormat(irccDraw) {
+  const category = mapCategory(irccDraw.drawName);
+
   return {
     drawNumber: parseInt(irccDraw.drawNumber),
     date: irccDraw.drawDate,
     invitationsIssued: parseInt(irccDraw.drawSize.replace(/,/g, ""), 10),
     minimumCRS: parseInt(irccDraw.drawCRS.replace(/,/g, ""), 10),
-    category: mapCategory(irccDraw.drawName),
+    category: category ?? irccDraw.drawName,
     year: new Date(irccDraw.drawDate).getFullYear().toString(),
   };
 }
@@ -274,6 +277,14 @@ async function main() {
     const distribution = mapDrawDistribution(latestDraw);
 
     await writeDistributionToFile(distribution);
+
+    // Send notification about the new draw
+    try {
+      await notifyNewDraw(newDraw);
+    } catch (notifyError) {
+      console.error("Failed to send notification:", notifyError.message);
+      // Don't fail the entire process if notification fails
+    }
 
     console.log(`Successfully added draw #${latestDrawNumber}`);
     console.log("Category mapped:", latestDraw.drawName, "→", newDraw.category);

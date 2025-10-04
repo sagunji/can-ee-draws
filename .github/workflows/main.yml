@@ -30,6 +30,8 @@ jobs:
 
       - name: Run extractor
         run: node ./scripts/extractor.js
+        env:
+          WEBHOOK_API: ${{ secrets.WEBHOOK_API }}
 
       - name: Check for changes
         id: check_changes
