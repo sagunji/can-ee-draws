@@ -29,6 +29,12 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Debug environment variables
+        run: |
+          echo "🔍 Debug: WEBHOOK_API is set: $([ -n "$WEBHOOK_API" ] && echo "YES" || echo "NO")"
+          echo "🔍 Debug: All environment variables containing 'WEBHOOK':"
+          env | grep -i webhook || echo "No WEBHOOK variables found"
+
       - name: Run extractor
         run: node ./scripts/extractor.js
 

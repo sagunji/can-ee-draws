@@ -238,6 +238,16 @@ async function writeDistributionToFile(distribution) {
 
 async function main() {
   try {
+    // Debug: Check if WEBHOOK_API is available
+    console.log(
+      "🔍 Debug: WEBHOOK_API environment variable:",
+      process.env.WEBHOOK_API ? "SET" : "NOT SET"
+    );
+    console.log(
+      "🔍 Debug: All environment variables containing 'WEBHOOK':",
+      Object.keys(process.env).filter((key) => key.includes("WEBHOOK"))
+    );
+
     const existingData = JSON.parse(
       await readFile("./data/ee-draws.json", "utf8")
     );
