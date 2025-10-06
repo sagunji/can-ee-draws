@@ -1,6 +1,14 @@
 {
   "draws": [
     {
+      "drawNumber": 371,
+      "date": "2025-10-06",
+      "invitationsIssued": 4500,
+      "minimumCRS": 432,
+      "category": "French",
+      "year": "2025"
+    },
+    {
       "drawNumber": 370,
       "date": "2025-10-01",
       "invitationsIssued": 1000,
