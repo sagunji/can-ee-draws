@@ -4,16 +4,6 @@ export async function notifyNewDraw(newDraw) {
   return new Promise((resolve, reject) => {
     const webhookUrl = process.env.WEBHOOK_API;
 
-    // Debug: Check environment variable
-    console.log(
-      "🔍 Debug notifyNewDraw: WEBHOOK_API =",
-      webhookUrl ? "SET" : "NOT SET"
-    );
-    console.log(
-      "🔍 Debug notifyNewDraw: All env vars with 'WEBHOOK':",
-      Object.keys(process.env).filter((key) => key.includes("WEBHOOK"))
-    );
-
     if (!webhookUrl) {
       console.log(
         "⚠️ WEBHOOK_API environment variable not set, skipping notification"

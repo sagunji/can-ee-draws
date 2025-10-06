@@ -8,6 +8,7 @@ on:
 jobs:
   update-draws:
     runs-on: ubuntu-latest
+    environment: prod # Add this line to use the environment
     env:
       TZ: "America/Toronto"
       WEBHOOK_API: ${{ secrets.WEBHOOK_API }}
