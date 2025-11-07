@@ -23,6 +23,7 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "nodemon": "^3.1.9",
+    "patch-package": "^8.0.1",
     "rollup": "^4.9.6",
     "wrangler": "^4.12.0"
   }
