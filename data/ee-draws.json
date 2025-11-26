@@ -1,6 +1,14 @@
 {
   "draws": [
     {
+      "drawNumber": 381,
+      "date": "2025-11-26",
+      "invitationsIssued": 1000,
+      "minimumCRS": 531,
+      "category": "CEC",
+      "year": "2025"
+    },
+    {
       "drawNumber": 380,
       "date": "2025-11-25",
       "invitationsIssued": 777,
