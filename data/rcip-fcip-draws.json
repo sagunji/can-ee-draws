@@ -1,0 +1,465 @@
+{
+  "meta": {
+    "province": "Ontario",
+    "country": "Canada",
+    "programs": ["RCIP", "FCIP"],
+    "schema_version": "1.3",
+    "notes": [
+      "Communities publish either per-draw/intake records or monthly rollups.",
+      "North Bay links provided are RCIP monthly statistics (no FCIP data on those pages)."
+    ]
+  },
+  "cities": [
+    {
+      "city": "Sudbury",
+      "province": "Ontario",
+      "data_source": "Invest Sudbury",
+      "source_url": "https://investsudbury.ca/why-sudbury/newcomers/rcip-and-fcip-candidates/",
+      "programs": [
+        {
+          "program": "RCIP",
+          "reporting_type": "draws",
+          "records": [
+            {
+              "record_id": "intake-1",
+              "start_date": "2025-06-23",
+              "end_date": "2025-06-27",
+              "post_date": null,
+              "lowest_score": 84,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": 66,
+              "community_recommendations_total": null,
+              "successful_applicants": null,
+              "businesses_designated": null,
+              "sector_breakdown": null,
+              "tie_breaker": null,
+              "source_url": null
+            },
+            {
+              "record_id": "intake-2",
+              "start_date": "2025-07-14",
+              "end_date": "2025-07-18",
+              "post_date": null,
+              "lowest_score": 83,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": 77,
+              "community_recommendations_total": null,
+              "successful_applicants": null,
+              "businesses_designated": null,
+              "sector_breakdown": null,
+              "tie_breaker": null,
+              "source_url": null
+            },
+            {
+              "record_id": "intake-3",
+              "start_date": "2025-08-11",
+              "end_date": "2025-08-15",
+              "post_date": null,
+              "lowest_score": 84,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": 63,
+              "community_recommendations_total": null,
+              "successful_applicants": null,
+              "businesses_designated": null,
+              "sector_breakdown": null,
+              "tie_breaker": null,
+              "source_url": null
+            },
+            {
+              "record_id": "intake-4",
+              "start_date": "2025-08-29",
+              "end_date": "2025-09-05",
+              "post_date": null,
+              "lowest_score": 81,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": 83,
+              "community_recommendations_total": null,
+              "successful_applicants": null,
+              "businesses_designated": null,
+              "sector_breakdown": null,
+              "tie_breaker": null,
+              "source_url": null
+            },
+            {
+              "record_id": "intake-5",
+              "start_date": "2025-09-22",
+              "end_date": "2025-09-26",
+              "post_date": null,
+              "lowest_score": 83,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": 85,
+              "community_recommendations_total": null,
+              "successful_applicants": null,
+              "businesses_designated": null,
+              "sector_breakdown": null,
+              "tie_breaker": null,
+              "source_url": null
+            },
+            {
+              "record_id": "intake-6",
+              "start_date": "2025-10-30",
+              "end_date": "2025-11-05",
+              "post_date": null,
+              "lowest_score": 85,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": 91,
+              "community_recommendations_total": null,
+              "successful_applicants": null,
+              "businesses_designated": null,
+              "sector_breakdown": null,
+              "tie_breaker": null,
+              "source_url": null
+            },
+            {
+              "record_id": "intake-7",
+              "start_date": "2025-11-24",
+              "end_date": "2025-11-28",
+              "post_date": null,
+              "lowest_score": 85,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": 52,
+              "community_recommendations_total": null,
+              "successful_applicants": null,
+              "businesses_designated": null,
+              "sector_breakdown": null,
+              "tie_breaker": "2025-11-26T11:13:00",
+              "source_url": null
+            }
+          ]
+        },
+        {
+          "program": "FCIP",
+          "reporting_type": "draws",
+          "records": [
+            {
+              "record_id": "intake-1",
+              "start_date": "2025-06-23",
+              "end_date": "2025-06-27",
+              "post_date": null,
+              "lowest_score": null,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": 7,
+              "community_recommendations_total": null,
+              "successful_applicants": null,
+              "businesses_designated": null,
+              "sector_breakdown": null,
+              "tie_breaker": null,
+              "source_url": null
+            },
+            {
+              "record_id": "intake-2",
+              "start_date": "2025-07-14",
+              "end_date": "2025-07-18",
+              "post_date": null,
+              "lowest_score": null,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": 3,
+              "community_recommendations_total": null,
+              "successful_applicants": null,
+              "businesses_designated": null,
+              "sector_breakdown": null,
+              "tie_breaker": null,
+              "source_url": null
+            },
+            {
+              "record_id": "intake-3",
+              "start_date": "2025-08-11",
+              "end_date": "2025-08-15",
+              "post_date": null,
+              "lowest_score": null,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": 6,
+              "community_recommendations_total": null,
+              "successful_applicants": null,
+              "businesses_designated": null,
+              "sector_breakdown": null,
+              "tie_breaker": null,
+              "source_url": null
+            },
+            {
+              "record_id": "intake-4",
+              "start_date": "2025-08-29",
+              "end_date": "2025-09-05",
+              "post_date": null,
+              "lowest_score": null,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": 4,
+              "community_recommendations_total": null,
+              "successful_applicants": null,
+              "businesses_designated": null,
+              "sector_breakdown": null,
+              "tie_breaker": null,
+              "source_url": null
+            },
+            {
+              "record_id": "intake-5",
+              "start_date": "2025-09-22",
+              "end_date": "2025-09-26",
+              "post_date": null,
+              "lowest_score": null,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": 11,
+              "community_recommendations_total": null,
+              "successful_applicants": null,
+              "businesses_designated": null,
+              "sector_breakdown": null,
+              "tie_breaker": null,
+              "source_url": null
+            },
+            {
+              "record_id": "intake-6",
+              "start_date": "2025-10-30",
+              "end_date": "2025-11-05",
+              "post_date": null,
+              "lowest_score": null,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": 10,
+              "community_recommendations_total": null,
+              "successful_applicants": null,
+              "businesses_designated": null,
+              "sector_breakdown": null,
+              "tie_breaker": null,
+              "source_url": null
+            },
+            {
+              "record_id": "intake-7",
+              "start_date": "2025-11-24",
+              "end_date": "2025-11-28",
+              "post_date": null,
+              "lowest_score": null,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": 5,
+              "community_recommendations_total": null,
+              "successful_applicants": null,
+              "businesses_designated": null,
+              "sector_breakdown": null,
+              "tie_breaker": null,
+              "source_url": null
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "city": "Timmins",
+      "province": "Ontario",
+      "data_source": "Timmins Economic Development Corporation",
+      "source_url": null,
+      "last_updated": "2025-08-21",
+      "programs": [
+        {
+          "program": "RCIP",
+          "reporting_type": "draws",
+          "records": [
+            {
+              "record_id": "2025-05-16",
+              "start_date": "2025-05-16",
+              "end_date": "2025-05-16",
+              "post_date": null,
+              "lowest_score": 70,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": null,
+              "community_recommendations_total": null,
+              "successful_applicants": null,
+              "businesses_designated": null,
+              "sector_breakdown": null,
+              "tie_breaker": null,
+              "source_url": null
+            },
+            {
+              "record_id": "2025-06-16",
+              "start_date": "2025-06-16",
+              "end_date": "2025-06-16",
+              "post_date": null,
+              "lowest_score": 83,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": null,
+              "community_recommendations_total": null,
+              "successful_applicants": null,
+              "businesses_designated": null,
+              "sector_breakdown": null,
+              "tie_breaker": "2025-05-29",
+              "source_url": null
+            },
+            {
+              "record_id": "2025-07-15",
+              "start_date": "2025-07-15",
+              "end_date": "2025-07-15",
+              "post_date": null,
+              "lowest_score": 87,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": null,
+              "community_recommendations_total": null,
+              "successful_applicants": null,
+              "businesses_designated": null,
+              "sector_breakdown": null,
+              "tie_breaker": "2025-06-26",
+              "source_url": null
+            },
+            {
+              "record_id": "2025-08-20",
+              "start_date": "2025-08-20",
+              "end_date": "2025-08-20",
+              "post_date": null,
+              "lowest_score": 86,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": null,
+              "community_recommendations_total": null,
+              "successful_applicants": null,
+              "businesses_designated": null,
+              "sector_breakdown": null,
+              "tie_breaker": null,
+              "source_url": null
+            }
+          ]
+        },
+        {
+          "program": "FCIP",
+          "reporting_type": "draws",
+          "records": [
+            {
+              "record_id": "2025-05-16",
+              "start_date": "2025-05-16",
+              "end_date": "2025-05-16",
+              "post_date": null,
+              "lowest_score": 76,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": null,
+              "community_recommendations_total": null,
+              "successful_applicants": null,
+              "businesses_designated": null,
+              "sector_breakdown": null,
+              "tie_breaker": null,
+              "source_url": null
+            },
+            {
+              "record_id": "2025-08-20",
+              "start_date": "2025-08-20",
+              "end_date": "2025-08-20",
+              "post_date": null,
+              "lowest_score": 84,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": null,
+              "community_recommendations_total": null,
+              "successful_applicants": null,
+              "businesses_designated": null,
+              "sector_breakdown": null,
+              "tie_breaker": null,
+              "source_url": null
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "city": "North Bay",
+      "province": "Ontario",
+      "data_source": "North Bay Rural Community Immigration Pilot",
+      "source_url": null,
+      "notes": [
+        "Monthly statistics pages provide rollups (totals, successful applicants in-month, score stats, sector breakdown), not a per-intake draw table."
+      ],
+      "programs": [
+        {
+          "program": "RCIP",
+          "reporting_type": "monthly_rollups",
+          "records": [
+            {
+              "record_id": "2025-09",
+              "start_date": "2025-09-01",
+              "end_date": "2025-09-30",
+              "post_date": "2025-09-30",
+              "lowest_score": null,
+              "average_score": 93,
+              "highest_score": 116,
+              "candidates_recommended": null,
+              "community_recommendations_total": 64,
+              "successful_applicants": null,
+              "businesses_designated": 136,
+              "sector_breakdown": {
+                "business_finance_admin": 4,
+                "health": 18,
+                "education_law_social_community_government": 21,
+                "sales_service": 8,
+                "trades_transportation_equipment_operators": 13
+              },
+              "tie_breaker": null,
+              "source_url": "https://nbrcip.ca/north-bay-area-rcip-monthly-statistics-september-2025/"
+            },
+            {
+              "record_id": "2025-10",
+              "start_date": "2025-10-01",
+              "end_date": "2025-10-31",
+              "post_date": "2025-11-07",
+              "lowest_score": null,
+              "average_score": 93,
+              "highest_score": 111,
+              "candidates_recommended": null,
+              "community_recommendations_total": 109,
+              "successful_applicants": 45,
+              "businesses_designated": 157,
+              "sector_breakdown": {
+                "business_finance_admin": 7,
+                "health": 26,
+                "education_law_social_community_government": 32,
+                "sales_service": 14,
+                "trades_transportation_equipment_operators": 30
+              },
+              "tie_breaker": null,
+              "source_url": "https://nbrcip.ca/north-bay-area-rcip-monthly-statistics-october-2025/"
+            },
+            {
+              "record_id": "2025-11",
+              "start_date": "2025-11-01",
+              "end_date": "2025-11-30",
+              "post_date": "2025-12-11",
+              "lowest_score": null,
+              "average_score": 92,
+              "highest_score": 109,
+              "candidates_recommended": null,
+              "community_recommendations_total": 144,
+              "successful_applicants": 35,
+              "businesses_designated": 163,
+              "sector_breakdown": {
+                "business_finance_admin": 8,
+                "health": 43,
+                "education_law_social_community_government": 38,
+                "sales_service": 20,
+                "trades_transportation_equipment_operators": 35
+              },
+              "tie_breaker": null,
+              "source_url": "https://nbrcip.ca/north-bay-area-rcip-monthly-statistics-november-2025/"
+            }
+          ]
+        },
+        {
+          "program": "FCIP",
+          "reporting_type": "not_published",
+          "records": []
+        }
+      ]
+    }
+  ]
+}
