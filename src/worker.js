@@ -4,6 +4,7 @@ import { getApiInfo } from "./controllers/api.controller";
 import { getPoolStats, getPoolProgress } from "./controllers/pool.controller";
 import { getCategories } from "./controllers/category.controller";
 import { getDraws, getLatestDraw } from "./controllers/draws.controller";
+import { getRegionalDraws, getRegionalDrawsDetails } from "./controllers/regional-draws.controller";
 
 const app = new Hono();
 
@@ -31,6 +32,14 @@ app.get("/api/draws", async (c) => {
 
 app.get("/api/draws/latest", async (c) => {
   return await getLatestDraw(c);
+});
+
+app.get("/api/draws/regional", async (c) => {
+  return await getRegionalDraws(c);
+});
+
+app.get("/api/draws/regional/details", async (c) => {
+  return await getRegionalDrawsDetails(c);
 });
 
 // Export the fetch handler for Cloudflare Workers

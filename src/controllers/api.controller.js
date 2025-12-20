@@ -26,6 +26,22 @@ const getApiInfo = (c) => {
         path: "/api/pool/progress",
         description: "Get the pool progress",
       },
+      regionalDraws: {
+        path: "/api/draws/regional",
+        description:
+          "Get regional draws (RCIP/FCIP) for a specific province and city, with optional programs filter",
+        parameters: [
+          "province (required)",
+          "city (required)",
+          "programs (optional)",
+        ],
+      },
+      regionalDrawsDetails: {
+        path: "/api/draws/regional/details",
+        description:
+          "Get regional draws details organized by province -> cities -> available programs",
+        parameters: ["province"],
+      },
     },
   });
 };
