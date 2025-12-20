@@ -42,6 +42,17 @@ const getApiInfo = (c) => {
           "Get regional draws details organized by province -> cities -> available programs",
         parameters: ["province"],
       },
+      oinpDraws: {
+        path: "/api/draws/oinp",
+        description:
+          "Get OINP (Ontario Immigrant Nominee Program) draws with optional stream_key filter",
+        parameters: ["stream_key (optional)"],
+      },
+      oinpDetails: {
+        path: "/api/draws/oinp/details",
+        description:
+          "Get OINP details including available streams with keys and natural names",
+      },
     },
   });
 };
