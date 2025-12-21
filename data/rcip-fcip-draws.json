@@ -1,6 +1,6 @@
 {
   "meta": {
-    "province": "Ontario",
+    "provinces": ["Ontario", "British Columbia"],
     "country": "Canada",
     "programs": ["RCIP", "FCIP"],
     "schema_version": "1.3",
@@ -451,6 +451,48 @@
               },
               "tie_breaker": null,
               "source_url": "https://nbrcip.ca/north-bay-area-rcip-monthly-statistics-november-2025/"
+            }
+          ]
+        },
+        {
+          "program": "FCIP",
+          "reporting_type": "not_published",
+          "records": []
+        }
+      ]
+    },
+
+    {
+      "city": "West Kootenay",
+      "province": "British Columbia",
+      "data_source": "West Kootenay RCIP",
+      "source_url": "https://westkootenayimmigration.ca/",
+      "last_updated": "2025-11-27",
+      "notes": [
+        "Intake for 2025 is closed. Expected to reopen in spring 2026.",
+        "Data provided as year-to-date aggregate statistics.",
+        "As of November 27, 2025: 171 designated employers, 173 employers in queue, 91 community recommendations (YTD), 271 community recommendation applications received (YTD)."
+      ],
+      "programs": [
+        {
+          "program": "RCIP",
+          "reporting_type": "year_to_date",
+          "records": [
+            {
+              "record_id": "2025-ytd",
+              "start_date": "2025-01-01",
+              "end_date": "2025-11-27",
+              "post_date": "2025-11-27",
+              "lowest_score": null,
+              "average_score": null,
+              "highest_score": null,
+              "candidates_recommended": null,
+              "community_recommendations_total": 91,
+              "successful_applicants": null,
+              "businesses_designated": 171,
+              "sector_breakdown": null,
+              "tie_breaker": null,
+              "source_url": "https://westkootenayimmigration.ca/"
             }
           ]
         },
