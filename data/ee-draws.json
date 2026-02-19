@@ -1,6 +1,14 @@
 {
   "draws": [
     {
+      "drawNumber": 397,
+      "date": "2026-02-19",
+      "invitationsIssued": 391,
+      "minimumCRS": 169,
+      "category": "Physicians with Canadian Work Experience, 2026-Version 1",
+      "year": "2026"
+    },
+    {
       "drawNumber": 396,
       "date": "2026-02-17",
       "invitationsIssued": 6000,
