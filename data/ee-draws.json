@@ -1,6 +1,14 @@
 {
   "draws": [
     {
+      "drawNumber": 402,
+      "date": "2026-03-05",
+      "invitationsIssued": 250,
+      "minimumCRS": 429,
+      "category": "Senior managers with Canadian Work Experience, 2026-Version 1",
+      "year": "2026"
+    },
+    {
       "drawNumber": 401,
       "date": "2026-03-04",
       "invitationsIssued": 5500,
