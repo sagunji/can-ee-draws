@@ -1,6 +1,14 @@
 {
   "draws": [
     {
+      "drawNumber": 406,
+      "date": "2026-03-30",
+      "invitationsIssued": 356,
+      "minimumCRS": 802,
+      "category": "PNP",
+      "year": "2026"
+    },
+    {
       "drawNumber": 405,
       "date": "2026-03-18",
       "invitationsIssued": 4000,
