@@ -1,6 +1,14 @@
 {
   "draws": [
     {
+      "drawNumber": 433,
+      "date": "2026-08-06",
+      "invitationsIssued": 5000,
+      "minimumCRS": 391,
+      "category": "French-Language proficiency 2026-Version 2",
+      "year": "2026"
+    },
+    {
       "drawNumber": 432,
       "date": "2026-08-05",
       "invitationsIssued": 3000,
