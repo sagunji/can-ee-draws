@@ -1,6 +1,14 @@
 {
   "draws": [
     {
+      "drawNumber": 434,
+      "date": "2026-08-07",
+      "invitationsIssued": 300,
+      "minimumCRS": 470,
+      "category": "Transport",
+      "year": "2026"
+    },
+    {
       "drawNumber": 433,
       "date": "2026-08-06",
       "invitationsIssued": 5000,
