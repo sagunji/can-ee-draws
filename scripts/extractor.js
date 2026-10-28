@@ -106,6 +106,10 @@ function mapCategory(irccCategory) {
       category: "French",
     },
     {
+      pattern: /french-Language proficiency/i,
+      category: "French"
+    },
+    {
       pattern: /canadian experience class/i,
       category: "CEC",
     },
@@ -136,6 +140,14 @@ function mapCategory(irccCategory) {
     {
       pattern: /^education$/i,
       category: "Education",
+    },
+    {
+      pattern: /physician/i,
+      category: "Physician"
+    },
+    {
+      pattern: /military/i,
+      category: "Military"
     },
     {
       pattern: /no program specified/i,
