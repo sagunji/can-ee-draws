@@ -7,3 +7,7 @@ command = "npm run build"
 
 [env.production]
 name = "can-ee-draws-prod"
+
+[observability.logs]
+enabled = false
+invocation_logs = true
